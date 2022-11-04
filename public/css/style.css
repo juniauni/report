@@ -1,0 +1,52 @@
+:root {
+    --body-bg: rgb(204, 204, 204);
+}
+
+body {
+    background-color: var(--body-bg);
+}
+
+.page {
+    background: var(--white);
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: var(--pageShadow);
+}
+
+.page[size="A4"] {
+    /* width: 21cm;
+    height: 29,7cm; */
+    overflow: hidden;
+}
+
+/* Report Section */
+.report {
+    padding-bottom: 25px;
+}
+
+.report p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.report h2 {
+    color: var(--themeColor);
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* Product Section */
+thead {
+    text-align: center;
+}
+
+.table td,
+.table th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+tr td:first-child {
+    text-align: left;
+}
+
