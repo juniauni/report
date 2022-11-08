@@ -14,10 +14,11 @@ body {
     box-shadow: var(--pageShadow);
 }
 
-.page[size="A4"] {
-    /* width: 21cm;
-    height: 29,7cm; */
+.page[size="F4"] {
+    width: 21.5cm;
+    /* height: 33cm; */
     overflow: hidden;
+    padding-bottom: 25px;
 }
 
 /* Report Section */
@@ -49,4 +50,10 @@ thead {
 tr td:first-child {
     text-align: left;
 }
+
+/* cover */
+table.center {
+    margin-left: auto; 
+    margin-right: auto;
+  }
 

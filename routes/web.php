@@ -1,6 +1,5 @@
 <?php
 use Illuminate\Support\Str;
-use App\Http\Controllers\ExampleController;
 
 /** @var \Laravel\Lumen\Routing\Router $router */
 
@@ -25,4 +24,10 @@ $router->get('/key', function () {
 });
 
 // 2013
-$router->get('/sdhasil','ExampleController@sdHasil');
+// paud
+$router->get('2013/paud/capaian',        'RaporController@capaian');
+// sd
+$router->get('2013/sd/cover',        'RaporController@cover');
+$router->get('2013/sd/identitassekolah',        'RaporController@identitassekolah');
+$router->get('2013/sd/identitassiswa',        'RaporController@identitassiswa');
+$router->get('2013/sd/hasil',        'RaporController@hasil');

@@ -10,82 +10,80 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- Custom Style -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}">
 
-    <title>KURIKULUM 2013 SD</title>
+    <title>Nilai Hasil Belajar</title>
 </head>
 
 <body>
-    <div class="my-5 page" size="A4">
+    <div class="page" size="F4">
         <div class="p-5">
-            <section class="report mt-5">
-                <div class="col-14">
-                    <div class="row extra-info pt-3">
-                        <div class="col-8">
-                        <table>
+            <section class="">
+                <div class="row extra-info">
+                    <div class="col-8">
+                        <table style="font-weight: bold">
                             <tr>
                                 <td><p>Nama Peserta Didik </p></td>
-                                <td><p>: <span>{{$nama}}</span></p></td>
+                                <td><p>: {{$nama}}</p></td>
                             </tr>
                             <tr>
                                 <td><p>NISN/NIS </p></td>
-                                <td><p>: <span>{{$nis}}</span></p></td>
+                                <td><p>: {{$nisn}}</p></td>
                             </tr>
                             <tr>
                                 <td><p>Nama Sekolah </p></td>
-                                <td><p>: <span>{{$sekolah}}</span></p></td>
+                                <td><p>: {{$sekolah}}</p></td>
                             </tr>
                             <tr>
                                 <td><p>Alamat Sekolah </p></td>
-                                <td><p>: <span>{{$alamat}}</span></p></td>
+                                <td><p>: {{$alamat_sekolah}}</p></td>
                             </tr>
                         </table>
-                        </div>
-                        <div class="col-4">
-                            <table>
-                                <tr>
-                                    <td><p>Kelas </p></td>
-                                    <td><p>: <span>{{$kelas}}</span></p></td>
-                                </tr>
-                                <tr>
-                                    <td><p>Semester </p></td>
-                                    <td><p>: <span>{{$semester}}</span></p></td>
-                                </tr>
-                                <tr>
-                                    <td><p>Tahun Ajaran </p></td>
-                                    <td><p>: <span>{{$tahun}}</span></p></td>
-                                </tr>
-                            </table>
-                        </div>
+                    </div>
+                    <div class="col-4">
+                        <table style="font-weight: bold">
+                            <tr>
+                                <td><p>Kelas </p></td>
+                                <td><p>: {{$kelas}}</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>Semester </p></td>
+                                <td><p>: {{$semester}}</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>Tahun Ajaran </p></td>
+                                <td><p>: {{$tahun}}</p></td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </section>
-
             <section>
-              <h6>A. Kompetensi Sikap</h6>
+                @php $idx = 0 @endphp
+                <h6>A. Kompetensi Sikap</h6>
                 <table border="1" width=100%>
                     <thead>
                         <tr">
-                            <th colspan="2">Deskripsi</th>
+                            <th colspan="2" >Deskripsi</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($kompetensi_sikap as $ks)
+                        @php $idx++ @endphp
                         <tr>
-                            <td>{{$sepiritual}}</td>
-                            <td>{{$catatan}}</td>
+                            <td width="330">{{$idx}}. {{$ks['subyek']}}</td>
+                            <td style="text-align:center">{{$ks['deskripsi']}}</td>
                         </tr>
-                        <tr>
-                            <td>{{$sosial}}</td>
-                            <td>{{$catatan}}</td>
-                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
                 <br>
+                @php $idx = 0 @endphp
                 <h6>B. Pengetahuan dan Keterampilan</h6>
                 <table border="1" width=100% >
                     <thead>
                         <tr>
-                            <th rowspan="2">No</th>
+                            <th rowspan="2" width="45">No</th>
                             <th rowspan="2">Muatan Pelajaran</th>
                             <th colspan="3">Pengetahuan</th>
                             <th colspan="3">Keterampilan</th>
@@ -100,30 +98,49 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($pengetahuan_keterampilan as $pk)
+                        @php $idx++ @endphp
                         <tr>
-                            <td>{{$no1}}</td>
-                            <td>{{$mapel1}}</td>
-                            <td>{{$nilai}}</td>
-                            <td>{{$pd}}</td>
-                            <td>{{$des}}</td>
-                            <td>{{$nilai}}</td>
-                            <td>{{$pd}}</td>
-                            <td>{{$des}}</td>
+                            <td style="text-align:center">{{$idx}}</td>
+                            <td width="285">{{$pk['subyek']}}</td>
+                            <td style="text-align:center">{{$pk['nilai_pengetahuan']}}</td>
+                            <td style="text-align:center">{{$pk['predikat_pengetahuan']}}</td>
+                            <td style="text-align:center">{{$pk['deskripsi_pengetahuan']}}</td>
+                            <td style="text-align:center">{{$pk['nilai_keterampilan']}}</td>
+                            <td style="text-align:center">{{$pk['nilai_keterampilan']}}</td>
+                            <td style="text-align:center">{{$pk['deskripsi_keterampilan']}}</td>
                         </tr>
-                        <tr>
-                            <td>{{$no2}}</td>
-                            <td>{{$mapel2}}</td>
-                            <td>{{$nilai}}</td>
-                            <td>{{$pd}}</td>
-                            <td>{{$des}}</td>
-                            <td>{{$nilai}}</td>
-                            <td>{{$pd}}</td>
-                            <td>{{$des}}</td>
-                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
                 <br>
-                <h6>C. Saran - Saran</h6>
+                @php $idx = 0 @endphp
+                <h6>C. Ekstrakurikuler</h6>
+                <table border="1" width=100% >
+                    <thead>
+                        <tr>
+                            <th width="45">No</th>
+                            <th>Kegiatan Ekstrakurikuler</th>
+                            <th>Nilai</th>
+                            <th>Predikat</th>
+                            <th>Deskripsi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach($ekstrakurikuler as $ekskul)
+                        @php $idx++ @endphp
+                        <tr>
+                            <td style="text-align:center" style="text-align:center" style="text-align:center">{{$idx}}</td>
+                            <td width="285">{{$ekskul['kegiatan']}}</td>
+                            <td style="text-align:center" style="text-align:center" style="text-align:center">{{$ekskul['nilai']}}</td>
+                            <td style="text-align:center" style="text-align:center" style="text-align:center">{{$ekskul['predikat']}}</td>
+                            <td style="text-align:center" style="text-align:center" style="text-align:center">{{$ekskul['deskripsi']}}</td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+                <br>
+                <h6>D. Saran - Saran</h6>
                 <table border="1" width=100% >
                     <tbody>
                         <tr>
@@ -131,93 +148,101 @@
                         </tr>
                     </tbody>
                 </table>
-                <br style="page-break-after: always;">
-                <h6>D. Tinggi dan Berat Badan</h6>
+                <br>
+                <h6>E. Tinggi dan Berat Badan</h6>
+                @php $idx = 0 @endphp
                 <table border="1" width=100% >
                     <thead>
                         <tr>
-                            <th rowspan="2">No</th>
-                            <th rowspan="2">Aspek Yang Di Nilai</th>
-                            <th colspan="2">Semester</th>
+                            <th rowspan="2" width="45">No</th>
+                            <th rowspan="2" width="285">Semester</th>
+                            <th colspan="2">Aspek Yang Dinilai</th>
                         </tr>
                         <tr>
-                            <th>1</th>
-                            <th>2</th>
+                            <th>Tinggi (CM)</th>
+                            <th>Berat (KG)</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($tinggi_berat as $tb)
+                        @php $idx++ @endphp
                         <tr>
-                            <td>{{$no1}}</td>
-                            <td>{{$tinggi}}</td>
-                            <td>{{$nilai}}</td>
-                            <td>{{$pd}}</td>
+                            <td style="text-align:center" style="text-align:center">{{$idx}}</td>
+                            <td>{{$tb['subyek']}}</td>
+                            <td style="text-align:center" style="text-align:center">{{$tb['nilai_1']}}</td>
+                            <td style="text-align:center" style="text-align:center">{{$tb['nilai_2']}}</td>
                         </tr>
-                        <tr>
-                            <td>{{$no2}}</td>
-                            <td>{{$berat}}</td>
-                            <td>{{$nilai}}</td>
-                            <td>{{$pd}}</td>
-                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
                 <br>
-                <h6>E. Kondisi Kesehatan</h6>
+                <h6>F. Kondisi Kesehatan</h6>
+                @php $idx = 0 @endphp
                 <table border="1" width=100% >
                     <thead>
                         <tr>
-                            <th>No</th>
+                            <th width="45">No</th>
                             <th colspan="2">Aspek Fisik</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($kesehatan as $ksh)
+                        @php $idx++ @endphp
                         <tr>
-                            <td>{{$no1}}</td>
-                            <td>{{$mapel1}}</td>
-                            <td>{{$nilai}}</td>
+                            <td style="text-align:center">{{$idx}}</td>
+                            <td width="285">{{$ksh['aspek']}}</td>
+                            <td style="text-align:center">{{$ksh['keadaan']}}</td>
                         </tr>
-                        <tr>
-                            <td>{{$no2}}</td>
-                            <td>{{$mapel2}}</td>
-                            <td>{{$nilai}}</td>
-                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
                 <br>
                 <h6>G. Prestasi</h6>
+                @php $idx = 0 @endphp
                 <table border="1" width=100% >
                     <thead>
                         <tr>
-                            <th>No</th>
-                            <th colspan="2">Jenis Prestasi</th>
+                            <th width="45">No</th>
+                            <th colspan="2">Jensi Prestasi</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($prestasi as $prs)
+                        @php $idx++ @endphp
                         <tr>
-                            <td>{{$no1}}</td>
-                            <td>{{$mapel1}}</td>
-                            <td>{{$nilai}}</td>
+                            <td style="text-align:center">{{$idx}}</td>
+                            <td  width="285">{{$prs['subyek']}}</td>
+                            <td style="text-align:center">{{$prs['nilai']}}</td>
                         </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+                <br>
+                <h6>H. Ketidakahadiran</h6>
+                <table border="1" width=50% >
+                    <tbody>
+                        @foreach($ketidakhadiran as $kth)
                         <tr>
-                            <td>{{$no2}}</td>
-                            <td>{{$mapel2}}</td>
-                            <td>{{$nilai}}</td>
+                            <td>{{$kth['alasan']}}</td>
+                            <td>: {{$kth['hari']}} hari</td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+                <br>
+                <table border="1" width=100% >
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p style="font-weight: bold">KEPUTUSAN</p>
+                                <p>Berdasarkan hasil yang dicapai pada semester I dan II, peserta :</p>
+                                <p>Naik ke kelas    : </p>
+                                <p>Tinggal di kelas : </p>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
                 <br>
-                <h6>I. Ketidakhadiran</h6>
-                <table border="1" width=50% >
-                    <tbody>
-                        <tr>
-                            <td>{{$mapel1}}</td>
-                            <td>{{$nilai}}</td>
-                        </tr>
-                        <tr>
-                            <td>{{$mapel2}}</td>
-                            <td>{{$nilai}}</td>
-                        </tr>
-                    </tbody>
-                </table>
             </section>
         </div>
     </div>
