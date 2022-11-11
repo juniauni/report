@@ -129,6 +129,47 @@ class RaporController extends Controller {
         ]);
     }
 
+    // menampilkan pertumbuhan siswa paud
+    public function pertumbuhanPaud(){
+        // data umum
+        $usia = "5 Tahun, 8 Bulan";
+        $berat = 17.20;
+        $tinggi = 114;
+        $kepala = 114;
+        $isi = [
+            ['judul' => 'BMI', 'isi' => 'BMI ananda adalah 13.6. Berat badan Ananda kurang ideal. Sebaiknya Ananda diatur
+            pola makanannya. Lengkapi makanan dengan daging, sayuran, buah-buahan, dan
+            protein yang mencukupi. Kurangi jajanan dan makanan dengan kadar gula lemak
+            tinggi. Jangan lupa ajak Ananda melakukan aktivitas fisik motorik secara teratur dan
+            sesuai dengan usianya.'],
+            ['judul' => 'Lingkar kepala anak', 'isi' => 'NORMAL/KONSULTASIKAN KE DOKTER (Lihat tabel acuan lingkar kepala dibawah)']
+        ];
+
+        return view('2013.paud.pertumbuhan',[
+            'usia' => $usia,
+            'berat' => $berat,
+            'tinggi' => $tinggi,
+            'kepala' => $kepala,
+            'isi' => $isi
+        ]);
+    }
+
+    // menampilkan penutup siswa paud
+    public function penutupPaud(){
+        $isi = "Perkembangan anak usia dini membutuhkan perhatian yang sangat intens oleh
+        berbagai pihak, tidak hanya oleh pihak guru dan kepala sekolah, namun juga orang
+        tua/ wali di rumah. Demikian halnya dengan Ananda Aiko Valerie Tjugito, yang ada
+        saat ini membutuhkan perhatian dari semua pihak agar potensi perkembangannya
+        lebih baik.
+        Harapan kami pada masa yang akan datang, Ananda Aiko Valerie Tjugito, semakin
+        baik dalam setiap aspek perkembangan dan pertumbuhannya, baik itu secara fisik
+        maupun psikis.";
+
+        return view('2013.paud.penutup',[
+            'isi' => $isi
+        ]);
+    }
+
 
     // SD
 
@@ -387,6 +428,28 @@ class RaporController extends Controller {
 
 
     // SMP
+
+    // menampilkan cover smp
+    public function coverSmp(){
+        // data umum
+        $nss = "204056102040";
+        $npsn = "20539730";
+        $alamat = "Jln. Ir. H. Juanda No. 06, Malang 65127";
+        $telp = "(0341) 366048";
+        $email = "smp_aletheia@yahoo.co.id";
+        $nama = "Junia Uni Umamatun Nysa";
+        $nisn = "1918112";
+
+        return view('2013.smp.cover',[
+            'nss' => $nss,
+            'npsn' => $npsn,
+            'alamat' => $alamat,
+            'telp' => $telp,
+            'email' => $email,
+            'nama' => $nama,
+            'nisn' => $nisn
+        ]);
+    }
 
     // menampilkan sikap smp
     public function sikapSmp(){

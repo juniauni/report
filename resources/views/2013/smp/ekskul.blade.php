@@ -16,17 +16,17 @@
 </head>
 
 <body>
-    <div class="page" size="F4">
+    <div class="page" size="F4-SMP">
         <div class="p-5">
             @php $idx = 0 @endphp
-            <h6>C. Ekstrakurikuler</h6>
+            <h6 style="font-weight: bold">C. Ekstrakurikuler</h6>
             <table class="center" width=100%>
                 <tr>
                     <td width="175">
-                        <h6>Nama </h6>
+                        <h6 style="font-weight: bold">Nama </h6>
                     </td>
                     <td style=>
-                        <h6>: {{$nama}}</h6>
+                        <h6 style="font-weight: bold">: {{$nama}}</h6>
                     </td>
                 </tr>
             </table>
@@ -54,7 +54,7 @@
                 </tbody>
             </table>
             <br>
-            <h6>D. Ketidakahadiran</h6>
+            <h6 style="font-weight: bold">D. Ketidakahadiran</h6>
             <table border="1" width=50% >
                 <tbody>
                     @foreach($ketidakhadiran as $kth)
@@ -65,6 +65,78 @@
                     @endforeach
                 </tbody>
             </table>
+            <section class="">
+                <div class="row extra-info">
+                    <div class="col-8">
+                        <table style="font-weight: bold">
+                            <tr>
+                                <td>
+                                    <br><br><br><br><br>
+                                    <h6>Orang Tua/Wali </h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6><br> </h6>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-4">
+                        <table style="font-weight: bold">
+                            <tr>
+                                <td>
+                                    <br><br><br><br><br>
+                                    <h6>Malang, 01 Januari 2022</h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>Guru Kelas, </h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6><br> </h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>NIY. 992318005 </h6>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <table class="center" width=40%>
+                            <tr>
+                                <td>
+                                    <br><br><br>
+                                    <h6>Mengetahui, </h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>Kepala Sekolah </h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6><br> </h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>Wiwik Heriyanti. S. TH </h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>NIY. 992318005 </h6>
+                                </td>
+                            </tr>
+                    </table>
+                </div>
+            </section>
         </div>
     </div>
 </body>

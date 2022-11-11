@@ -21,24 +21,25 @@
             <section class="">
                 <table class="center" width=80%>
                     <tr style="height:50px">
-                        <td colspan="2"> 
-                            <h6 style="text-align:center">IDENTITAS PESERTA DIDIK</h6>
+                        <td colspan="3"> 
+                            <h6 style="text-align:center; font-weight: bold;" >IDENTITAS PESERTA DIDIK</h6>
+                            <br><br>
                         </td>
                     </tr>
-                    <tr style="height:50px">
+                    <tr>
                         <td width="45">
-                            <h6>1. </h6>
+                            <h6 style="font-weight: bold">1. </h6>
                         </td>
                         <td width="175">
                             <h6>Nama Peserta Didik </h6>
                         </td>
-                        <td style=>
+                        <td>
                             <h6>: {{$siswa}}</h6>
                         </td>
                     </tr>
-                    <tr style="height:50px">
+                    <tr>
                         <td width="45">
-                            <h6>2. </h6>
+                            <h6 style="font-weight: bold">2. </h6>
                         </td>
                         <td>
                             <h6>NISN / NIS </h6>
@@ -47,9 +48,9 @@
                             <h6>: {{$nisn}} / {{$nis}}</h6>
                         </td>
                     </tr>
-                    <tr style="height:50px">
+                    <tr>
                         <td width="45">
-                            <h6>3. </h6>
+                            <h6 style="font-weight: bold">3. </h6>
                         </td>
                         <td>
                             <h6>Tempat, Tanggal Lahir </h6>
@@ -58,9 +59,9 @@
                             <h6>: {{$tempat_lahir}}, {{$tanggal_lahir}}</h6>
                         </td>
                     </tr>
-                    <tr style="height:50px">
+                    <tr>
                         <td width="45">
-                            <h6>4. </h6>
+                            <h6 style="font-weight: bold">4. </h6>
                         </td>
                         <td>
                             <h6>Jenis Kelamin </h6>
@@ -69,9 +70,9 @@
                             <h6>: {{$gender}}</h6>
                         </td>
                     </tr>
-                    <tr style="height:50px">
+                    <tr>
                         <td width="45">
-                            <h6>5. </h6>
+                            <h6 style="font-weight: bold">5. </h6>
                         </td>
                         <td>
                             <h6>Agama </h6>
@@ -80,9 +81,9 @@
                             <h6>: {{$agama}}</h6>
                         </td>
                     </tr>
-                    <tr style="height:50px">
+                    <tr>
                         <td width="45">
-                            <h6>6. </h6>
+                            <h6 style="font-weight: bold">6. </h6>
                         </td>
                         <td>
                             <h6>Alamat Peserta Didik </h6>
@@ -91,15 +92,15 @@
                             <h6>: {{$alamat}}</h6>
                         </td>
                     </tr>
-                    <tr style="height:50px">
+                    <tr>
                         <td width="45" rowspan="3">
-                            <h6>7. </h6>
+                            <h6 style="font-weight: bold">7. </h6>
                         </td>
                         <td colspan="2" style="text-align:left">
                             <h6>Nama Orang Tua </h6>
                         </td>
                     </tr>
-                    <tr style="height:50px">
+                    <tr>
                         <td>
                             <h6>Ayah </h6>
                         </td>
@@ -107,7 +108,7 @@
                             <h6>: {{$ayah}}</h6>
                         </td>
                     </tr>
-                    <tr style="height:50px">
+                    <tr>
                         <td>
                             <h6>Ibu </h6>
                         </td>
@@ -115,15 +116,15 @@
                             <h6>: {{$ibu}}</h6>
                         </td>
                     </tr>
-                    <tr style="height:50px">
+                    <tr>
                         <td width="45" rowspan="3">
-                            <h6>8. </h6>
+                            <h6 style="font-weight: bold">8. </h6>
                         </td>
                         <td colspan="2" style="text-align:left">
                             <h6>Pekerjaan Orang Tua </h6>
                         </td>
                     </tr>
-                    <tr style="height:50px">
+                    <tr>
                         <td>
                             <h6>a. Ayah </h6>
                         </td>
@@ -131,7 +132,7 @@
                             <h6>: {{$pekerjaan_ayah}}</h6>
                         </td>
                     </tr>
-                    <tr style="height:50px">
+                    <tr>
                         <td>
                             <h6>b. Ibu </h6>
                         </td>
@@ -139,15 +140,15 @@
                             <h6>: {{$pekerjaan_ibu}}</h6>
                         </td>
                     </tr>
-                    <tr style="height:50px">
+                    <tr>
                         <td width="45" rowspan="6">
-                            <h6>9. </h6>
+                            <h6 style="font-weight: bold">9. </h6>
                         </td>
                         <td colspan="2" style="text-align:left">
                             <h6>Alamat Orang Tua / Wali </h6>
                         </td>
                     </tr>
-                    <tr style="height:50px">
+                    <tr>
                         <td>
                             <h6>Jalan </h6>
                         </td>
@@ -155,7 +156,7 @@
                             <h6>: {{$jalan}}</h6>
                         </td>
                     </tr>
-                    <tr style="height:50px">
+                    <tr>
                         <td>
                             <h6>Kelurahan/Desa </h6>
                         </td>
@@ -163,7 +164,7 @@
                             <h6>: {{$keldes}}</h6>
                         </td>
                     </tr>
-                    <tr style="height:50px">
+                    <tr>
                         <td>
                             <h6>Kecamatan </h6>
                         </td>
@@ -171,7 +172,7 @@
                             <h6>: {{$kecamatan}}</h6>
                         </td>
                     </tr>
-                    <tr style="height:50px">
+                    <tr>
                         <td>
                             <h6>Kabupaten/Kota </h6>
                         </td>
@@ -179,7 +180,7 @@
                             <h6>: {{$kabkot}}</h6>
                         </td>
                     </tr>
-                    <tr style="height:50px">
+                    <tr>
                         <td>
                             <h6>Provinsi </h6>
                         </td>
@@ -187,15 +188,15 @@
                             <h6>: {{$provinsi}}</h6>
                         </td>
                     </tr>
-                    <tr style="height:50px">
-                        <td width="45" rowspan="4">
-                            <h6>10. </h6>
+                    <tr>
+                        <td width="45" rowspan="3">
+                            <h6 style="font-weight: bold">10. </h6>
                         </td>
                         <td colspan="2" style="text-align:left">
                             <h6>Wali Peserta Didik </h6>
                         </td>
                     </tr>
-                    <tr style="height:50px">
+                    <tr>
                         <td>
                             <h6>a. Nama Wali </h6>
                         </td>
@@ -203,12 +204,39 @@
                             <h6>: {{$nama_wali}}</h6>
                         </td>
                     </tr>
-                    <tr style="height:50px">
+                    <tr>
                         <td>
                             <h6>b. Pekerjaan </h6>
                         </td>
                         <td>
                             <h6>: {{$pekerjaan_wali}}</h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5" colspan="2">
+                            <br><br><br>
+                            <img src="{{ URL::asset('assets/paud.jpg') }}" alt="" height="120" width="120" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br><br><br>
+                            <h6>KOTA MALANG, Jumat, 24 Juni 2022 </h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h6>Kepala Sekolah, </h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h6><br> </h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h6>LILIN NGUDI RAHAYU, S. Pd </h6>
                         </td>
                     </tr>
                 </table>

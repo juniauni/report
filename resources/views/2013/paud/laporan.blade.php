@@ -19,10 +19,11 @@
     <div class="page" size="F4">
         <div class="p-5">
             <section class="">
-                <table class="center" width=100%>
+                <table class="center" width=80%>
                     <tr style="height:50px">
                         <td colspan="2"> 
-                            <h6 style="text-align:center">LAPORAN PERKEMBANGAN PESERTA DIDIK</h6>
+                            <h6 style="text-align:center; font-weight: bold;" >LAPORAN PERKEMBANGAN PESERTA DIDIK</h6>
+                            <br><br>
                         </td>
                     </tr>
                     <tr>
@@ -84,7 +85,7 @@
                 </table>
             </section>
             <section>
-                <table width=100%>
+                <table class="center"  width=80%>
                     <tbody>
                         @foreach($isi as $isi)
                         <tr>
@@ -92,8 +93,8 @@
                                 <img src="{{ URL::asset('assets/paud.jpg') }}" alt="" height="120" width="120" />
                             </td>
                             <td>
-                                <p style="font-size:11px">{{$isi['judul']}}</p>
-                                <p style="font-size:11px">{{$isi['isi']}}</p>
+                                <p style="font-size:11px; font-weight: bold;" >{{$isi['judul']}}</p>
+                                <p style="font-size:11px; text-align: justify;">{{$isi['isi']}}</p>
                             </td>
                         </tr>
                         @endforeach

@@ -21,99 +21,100 @@
             <section class="">
                 <table class="center" width=80%>
                     <tr style="height:150px">
-                        <td style="text-align:center" colspan="2"> 
-                            <h4>LAPORAN</h4>
-                            <h4>HASIL PENCAPAIAN KOMPETENSI PESERTA DIDIK</h4>
-                            <h4>SEKOLAH DASAR</h4>
-                            <h4>(SD)</h4>
+                        <td style="text-align:center; font-weight: bold;" colspan="2"> 
+                            <h4 style="font-weight: bold;">LAPORAN</h4>
+                            <h4 style="font-weight: bold;">HASIL PENCAPAIAN KOMPETENSI PESERTA DIDIK</h4>
+                            <h4 style="font-weight: bold;">SEKOLAH DASAR</h4>
+                            <h4 style="font-weight: bold;">(SD)</h4>
+                            <br><br>
                         </td>
                     </tr>
                     <tr style="height:50px">
                         <td width="175">
-                            <h6>Nama Sekolah </h6>
+                            <h6 style="font-weight: bold;">Nama Sekolah </h6>
                         </td>
                         <td style=>
-                            <h6>: {{$sekolah}}</h6>
+                            <h6 style="font-weight: bold;">: {{$sekolah}}</h6>
                         </td>
                     </tr>
                     <tr style="height:50px">
                         <td>
-                            <h6>NIS/NSS/NDS </h6>
+                            <h6 style="font-weight: bold;">NIS/NSS/NDS </h6>
                         </td>
                         <td>
-                            <h6>: {{$nis}}</h6>
-                        </td>
-                    </tr>
-                    <tr style="height:50px">
-                        <td>
-                            <h6>Alamat Sekolah </h6>
-                        </td>
-                        <td>
-                            <h6>: {{$alamat}}</h6>
+                            <h6 style="font-weight: bold;">: {{$nis}}</h6>
                         </td>
                     </tr>
                     <tr style="height:50px">
                         <td>
-                            <h6>Kode Pos </h6>
+                            <h6 style="font-weight: bold;">Alamat Sekolah </h6>
                         </td>
                         <td>
-                            <h6>: {{$kodepos}}</h6>
-                        </td>
-                    </tr>
-                    <tr style="height:50px">
-                        <td>
-                            <h6>Telp </h6>
-                        </td>
-                        <td>
-                            <h6>: {{$telp}}</h6>
+                            <h6 style="font-weight: bold;">: {{$alamat}}</h6>
                         </td>
                     </tr>
                     <tr style="height:50px">
                         <td>
-                            <h6>Kelurahan/Desa </h6>
+                            <h6 style="font-weight: bold;">Kode Pos </h6>
                         </td>
                         <td>
-                            <h6>: {{$keldes}}</h6>
-                        </td>
-                    </tr>
-                    <tr style="height:50px">
-                        <td>
-                            <h6>Kecamatan </h6>
-                        </td>
-                        <td>
-                            <h6>: {{$kecamatan}}</h6>
+                            <h6 style="font-weight: bold;">: {{$kodepos}}</h6>
                         </td>
                     </tr>
                     <tr style="height:50px">
                         <td>
-                            <h6>Kabupaten/Kota </h6>
+                            <h6 style="font-weight: bold;">Telp </h6>
                         </td>
                         <td>
-                            <h6>: {{$kabkot}}</h6>
-                        </td>
-                    </tr>
-                    <tr style="height:50px">
-                        <td>
-                            <h6>Provinsi </h6>
-                        </td>
-                        <td>
-                            <h6>: {{$provinsi}}</h6>
+                            <h6 style="font-weight: bold;">: {{$telp}}</h6>
                         </td>
                     </tr>
                     <tr style="height:50px">
                         <td>
-                            <h6>Website </h6>
+                            <h6 style="font-weight: bold;">Kelurahan/Desa </h6>
                         </td>
                         <td>
-                            <h6>: {{$website}}</h6>
+                            <h6 style="font-weight: bold;">: {{$keldes}}</h6>
                         </td>
                     </tr>
                     <tr style="height:50px">
                         <td>
-                            <h6>E-mail </h6>
+                            <h6 style="font-weight: bold;">Kecamatan </h6>
                         </td>
                         <td>
-                            <h6>: {{$email}}</h6>
+                            <h6 style="font-weight: bold;">: {{$kecamatan}}</h6>
+                        </td>
+                    </tr>
+                    <tr style="height:50px">
+                        <td>
+                            <h6 style="font-weight: bold;">Kabupaten/Kota </h6>
+                        </td>
+                        <td>
+                            <h6 style="font-weight: bold;">: {{$kabkot}}</h6>
+                        </td>
+                    </tr>
+                    <tr style="height:50px">
+                        <td>
+                            <h6 style="font-weight: bold;">Provinsi </h6>
+                        </td>
+                        <td>
+                            <h6 style="font-weight: bold;">: {{$provinsi}}</h6>
+                        </td>
+                    </tr>
+                    <tr style="height:50px">
+                        <td>
+                            <h6 style="font-weight: bold;">Website </h6>
+                        </td>
+                        <td>
+                            <h6 style="font-weight: bold;">: {{$website}}</h6>
+                        </td>
+                    </tr>
+                    <tr style="height:50px">
+                        <td>
+                            <h6 style="font-weight: bold;">E-mail </h6>
+                        </td>
+                        <td>
+                            <h6 style="font-weight: bold;">: {{$email}}</h6>
                         </td>
                     </tr>
                 </table>

@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="page" size="F4">
+    <div class="page" size="F4-SMP">
         <div class="p-5">
         <section class="">
                 <div class="row extra-info">

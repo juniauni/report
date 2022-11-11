@@ -20,6 +20,12 @@ body {
     overflow: hidden;
     padding-bottom: 25px;
 }
+.page[size="F4-SMP"] {
+    width: 21.5cm;
+    height: 33cm;
+    overflow: hidden;
+    padding-bottom: 25px;
+}
 
 /* Report Section */
 .report {

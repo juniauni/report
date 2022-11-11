@@ -16,25 +16,25 @@
 </head>
 
 <body>
-    <div class="page" size="F4">
+    <div class="page" size="F4-SMP">
         <div class="p-5">
         @php $idx = 0 @endphp
-            <h6>B. Pengetahuan dan Keterampilan</h6>
+            <h6 style="font-weight: bold">B. Pengetahuan dan Keterampilan</h6>
             <table class="center" width=100%>
                 <tr>
                     <td width="175">
-                        <h6>Nama </h6>
+                        <h6 style="font-weight: bold">Nama </h6>
                     </td>
                     <td style=>
-                        <h6>: {{$nama}}</h6>
+                        <h6 style="font-weight: bold">: {{$nama}}</h6>
                     </td>
                 </tr>
                 <tr>
                     <td width="175">
-                        <h6>Ketuntansan Minimal </h6>
+                        <h6 style="font-weight: bold">Ketuntansan Minimal </h6>
                     </td>
                     <td style=>
-                        <h6>: {{$kkm}}</h6>
+                        <h6 style="font-weight: bold">: {{$kkm}}</h6>
                     </td>
                 </tr>
             </table>

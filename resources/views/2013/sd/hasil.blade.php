@@ -244,6 +244,78 @@
                 </table>
                 <br>
             </section>
+            <section class="">
+                <div class="row extra-info">
+                    <div class="col-8">
+                        <table style="font-weight: bold">
+                            <tr>
+                                <td>
+                                    <br><br><br>
+                                    <h6>Orang Tua/Wali </h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6><br> </h6>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-4">
+                        <table style="font-weight: bold">
+                            <tr>
+                                <td>
+                                    <br><br><br>
+                                    <h6>Malang, 01 Januari 2022</h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>Guru Kelas, </h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6><br> </h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>NIY. 992318005 </h6>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <table class="center" width=40%>
+                            <tr>
+                                <td>
+                                    <br><br><br>
+                                    <h6>Mengetahui, </h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>Kepala Sekolah </h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6><br> </h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>Wiwik Heriyanti. S. TH </h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>NIY. 992318005 </h6>
+                                </td>
+                            </tr>
+                    </table>
+                </div>
+            </section>
         </div>
     </div>
 </body>
