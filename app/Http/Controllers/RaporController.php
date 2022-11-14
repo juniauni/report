@@ -486,7 +486,7 @@ class RaporController extends Controller {
         $kkm = "75";
 
         // nilai pengetahuan dan keterampilan
-        $pengetahuan_keterampilan = [
+        $pengetahuan_A = [
             [
                 'subyek' => "Pendidikan Agama dan Budi Pekerti",
                 'nilai_pengetahuan' => 80,
@@ -524,6 +524,14 @@ class RaporController extends Controller {
                 'deskripsi_pengetahuan' => "Cukup"
             ],
             [
+                'subyek' => "Bahasa Inggris",
+                'nilai_pengetahuan' => 58,
+                'predikat_pengetahuan' => "E",
+                'deskripsi_pengetahuan' => "Kurang"
+            ]
+        ];
+        $pengetahuan_B = [
+            [
                 'subyek' => "Seni Budaya dan Prakarya",
                 'nilai_pengetahuan' => 88,
                 'predikat_pengetahuan' => "A",
@@ -535,13 +543,123 @@ class RaporController extends Controller {
                 'predikat_pengetahuan' => "B",
                 'deskripsi_pengetahuan' => "Baik"
                
+            ],
+            [
+                'subyek' => "Prakarya",
+                'nilai_pengetahuan' => 75,
+                'predikat_pengetahuan' => "C",
+                'deskripsi_pengetahuan' => "Cukup"
+            ],
+            [
+                'subyek' => "Teknologi Informasi dan Komunikasi",
+                'nilai_pengetahuan' => 75,
+                'predikat_pengetahuan' => "C",
+                'deskripsi_pengetahuan' => "Cukup"
+               
+            ],
+            [
+                'subyek' => "Bahasa Daerah",
+                'nilai_pengetahuan' => 78,
+                'predikat_pengetahuan' => "C",
+                'deskripsi_pengetahuan' => "Cukup"
+               
             ]
         ];
 
         return view('2013.smp.pengetahuan',[
             'nama' => $nama,
             'kkm' => $kkm,
-            'pengetahuan_keterampilan' => $pengetahuan_keterampilan
+            'pengetahuan_A' => $pengetahuan_A,
+            'pengetahuan_B' => $pengetahuan_B
+        ]);
+    }
+
+    // menampilkan keterampilan smp
+    public function keterampilan(){
+        // nilai pengetahuan dan keterampilan
+        $keterampilan_A = [
+            [
+                'subyek' => "Pendidikan Agama dan Budi Pekerti",
+                'nilai_keterampilan' => 80,
+                'predikat_keterampilan' => "A",
+                'deskripsi_keterampilan' => "Baik Sekali"
+            ],
+            [
+                'subyek' => "Pendidikan Pancasila dan Kewarganegaraan",
+                'nilai_keterampilan' => 75,
+                'predikat_keterampilan' => "B",
+                'deskripsi_keterampilan' => "Baik"
+            ],
+            [
+                'subyek' => "Bahasa Indonesia",
+                'nilai_keterampilan' => 76,
+                'predikat_keterampilan' => "B",
+                'deskripsi_keterampilan' => "Baik"
+            ],
+            [
+                'subyek' => "Matematika",
+                'nilai_keterampilan' => 76,
+                'predikat_keterampilan' => "B",
+                'deskripsi_keterampilan' => "Baik"
+            ],
+            [
+                'subyek' => "Ilmu keterampilan Alam",
+                'nilai_keterampilan' => 80,
+                'predikat_keterampilan' => "A",
+                'deskripsi_keterampilan' => "Baik Sekali"
+            ],
+            [
+                'subyek' => "Ilmu keterampilan Sosial",
+                'nilai_keterampilan' => 67,
+                'predikat_keterampilan' => "C",
+                'deskripsi_keterampilan' => "Cukup"
+            ],
+            [
+                'subyek' => "Bahasa Inggris",
+                'nilai_keterampilan' => 58,
+                'predikat_keterampilan' => "E",
+                'deskripsi_keterampilan' => "Kurang"
+            ]
+        ];
+        $keterampilan_B = [
+            [
+                'subyek' => "Seni Budaya dan Prakarya",
+                'nilai_keterampilan' => 88,
+                'predikat_keterampilan' => "A",
+                'deskripsi_keterampilan' => "Baik Sekali"
+            ],
+            [
+                'subyek' => "Pendidikan Jasmani Olah Raga dan Kesehatan",
+                'nilai_keterampilan' => 70,
+                'predikat_keterampilan' => "B",
+                'deskripsi_keterampilan' => "Baik"
+               
+            ],
+            [
+                'subyek' => "Prakarya",
+                'nilai_keterampilan' => 75,
+                'predikat_keterampilan' => "C",
+                'deskripsi_keterampilan' => "Cukup"
+            ],
+            [
+                'subyek' => "Teknologi Informasi dan Komunikasi",
+                'nilai_keterampilan' => 75,
+                'predikat_keterampilan' => "C",
+                'deskripsi_keterampilan' => "Cukup"
+               
+            ],
+            [
+                'subyek' => "Bahasa Daerah",
+                'nilai_keterampilan' => 78,
+                'predikat_keterampilan' => "C",
+                'deskripsi_keterampilan' => "Cukup"
+               
+            ]
+        ];
+
+        return view('2013.smp.keterampilan',[
+            'keterampilan_A' => $keterampilan_A,
+            'keterampilan_B' => $keterampilan_B
         ]);
     }
     

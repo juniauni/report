@@ -41,5 +41,6 @@ $router->get('2013/sd/hasil',        'RaporController@hasil');
 $router->get('2013/smp/cover',        'RaporController@coverSmp');
 $router->get('2013/smp/sikap',        'RaporController@sikapSmp');
 $router->get('2013/smp/pengetahuan',        'RaporController@pengetahuan');
+$router->get('2013/smp/keterampilan',        'RaporController@keterampilan');
 $router->get('2013/smp/ekskul',        'RaporController@ekskul');
 

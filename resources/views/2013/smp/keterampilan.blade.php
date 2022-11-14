@@ -12,38 +12,18 @@
     <!-- Custom Style -->
     <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}">
 
-    <title>Pengetahuan</title>
+    <title>Keterampilan</title>
 </head>
 
 <body>
     <div class="page" size="F4-SMP">
         <div class="p-5">
-        @php $idx = 0 @endphp
-            <h6 style="font-weight: bold">B. Pengetahuan dan Keterampilan</h6>
-            <table class="center" width=100%>
-                <tr>
-                    <td width="175">
-                        <h6 style="font-weight: bold">Nama </h6>
-                    </td>
-                    <td style=>
-                        <h6 style="font-weight: bold">: {{$nama}}</h6>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="175">
-                        <h6 style="font-weight: bold">Ketuntansan Minimal </h6>
-                    </td>
-                    <td style=>
-                        <h6 style="font-weight: bold">: {{$kkm}}</h6>
-                    </td>
-                </tr>
-            </table>
             <table border="1" width=100% >
                 <thead>
                     <tr>
                         <th rowspan="2" width="45">No</th>
                         <th rowspan="2">Mata Pelajaran</th>
-                        <th colspan="3">Pengetahuan</th>
+                        <th colspan="3">Keterampilan</th>
                     </tr>
                     <tr>
                         <th>Angka</th>
@@ -56,28 +36,28 @@
                         <td colspan="5">Kelompok A</td>
                     </tr>
                     @php $idx = 0 @endphp
-                    @foreach($pengetahuan_A as $pk)
+                    @foreach($keterampilan_A as $pk)
                     @php $idx++ @endphp
                     <tr>
                         <td style="text-align:center">{{$idx}}</td>
                         <td width="285">{{$pk['subyek']}}</td>
-                        <td style="text-align:center">{{$pk['nilai_pengetahuan']}}</td>
-                        <td style="text-align:center">{{$pk['predikat_pengetahuan']}}</td>
-                        <td style="text-align:center">{{$pk['deskripsi_pengetahuan']}}</td>
+                        <td style="text-align:center">{{$pk['nilai_keterampilan']}}</td>
+                        <td style="text-align:center">{{$pk['predikat_keterampilan']}}</td>
+                        <td style="text-align:center">{{$pk['deskripsi_keterampilan']}}</td>
                     </tr>
                     @endforeach
                     <tr>
                         <td colspan="5">Kelompok B</td>
                     </tr>
                     @php $idx = 0 @endphp
-                    @foreach($pengetahuan_B as $pk)
+                    @foreach($keterampilan_B as $pk)
                     @php $idx++ @endphp
                     <tr>
                         <td style="text-align:center">{{$idx}}</td>
                         <td width="285">{{$pk['subyek']}}</td>
-                        <td style="text-align:center">{{$pk['nilai_pengetahuan']}}</td>
-                        <td style="text-align:center">{{$pk['predikat_pengetahuan']}}</td>
-                        <td style="text-align:center">{{$pk['deskripsi_pengetahuan']}}</td>
+                        <td style="text-align:center">{{$pk['nilai_keterampilan']}}</td>
+                        <td style="text-align:center">{{$pk['predikat_keterampilan']}}</td>
+                        <td style="text-align:center">{{$pk['deskripsi_keterampilan']}}</td>
                     </tr>
                     @endforeach
                 </tbody>
